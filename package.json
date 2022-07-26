@@ -1,0 +1,13 @@
+{
+  "name": "site-estudos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/JeffersonDRego/site-estudos.git",
+  "author": "Jefferson Delfino <jefferson.delfino@jbq.global>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "next": "^12.2.3",
+    "react-bootstrap": "^2.4.0"
+  }
+}
