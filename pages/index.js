@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Header from "../components/header"
+import Footer from '../components/footer';
 import OffCanvas from '../components/offcanvas';
 
 export default function Home(){
@@ -12,7 +13,7 @@ export default function Home(){
             <Header/>
             <Container fluid style={{height:'100%', padding:0}}>
                 <Row className='me-0'>
-                    <Col className='col-12 col-md-4 col-xs-3 d-flex align-items-start justify-content-center'>
+                    <Col className='col-12 col-md-3 d-flex align-items-start justify-content-center'>
                         <OffCanvas/>
                     </Col>
                     <Col className='mt-5 m-5'>
@@ -29,6 +30,7 @@ export default function Home(){
                 </Row>
                 <hr/>
             </Container>
+            <Footer/>
         </Container>
     )
 }

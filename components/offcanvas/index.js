@@ -1,4 +1,5 @@
-import React, {useState, StyleSheet} from 'react';
+import React, {useState} from 'react';
+import styles from '../../styles.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -11,7 +12,7 @@ const options = [
     {
         name :'Exibir todos os tópicos!',
         scroll: true,
-        backdrop: true
+        backdrop: true,
     }
 ]
 
@@ -29,38 +30,40 @@ function OffCanvasExample({ name, ...props }) {
     }
     return (
       <>
-        <Button className="mt-5 btn-info" onClick={toggleShow}>
+        <Button className="mt-5 btn" style={{backgroundColor:'#FFA500', borderWidth:0}}onClick={toggleShow}>
           {name}
         </Button>
         <Offcanvas show={show} onHide={handleClose} {...props}>
-          <Offcanvas.Header style={{backgroundColor:'#313131'}} closeButton>
+          {/* <Offcanvas.Header style={{backgroundColor:'#313131'}} closeButton closeVariant='white'> */}
+          <Offcanvas.Header style={{backgroundColor:'#313131'}}>
             <Offcanvas.Title style={{color:'#FFA500'}}>Matérias para estudo</Offcanvas.Title>
+            <div className='btn-close' style={{backgroundColor:'#FFA500'}} onClick={() => setShow(false)}></div>
           </Offcanvas.Header>
-          <div className='pt-2' style={{backgroundColor:'#d1d1d1'}}>
-            <h5 className='ms-3' >Documentações Oficiais </h5>
+          <div className='pt-2' style={{backgroundColor:'#A1A1A1', color:'#FFF'}}>
+            <h5 className='ms-3' >Documentações Oficiais: </h5>
           </div>
-          <Offcanvas.Body className='btn-info' style={{backgroundColor:'skyblue'}}>
+          <Offcanvas.Body className='btn-info' style={{backgroundColor:'#D3D3D3'}}>
             <Col className='mb-1'>
-                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">HTML</a>
+                <a className={styles.a} href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" >- HTML</a>
             </Col>
             <Col className='mb-1'>
-                <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">CSS</a>
+                <a className={styles.a} href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">- CSS</a>
             </Col>
             <Col className='mb-1'>
-                <a href="https://pt-br.reactjs.org/">React</a>
+                <a className={styles.a} href="https://pt-br.reactjs.org/">- React</a>
             </Col>
             <Col className='mb-1'>
-                <a href="https://dev.mysql.com/doc/">MySql</a>
+                <a className={styles.a} href="https://dev.mysql.com/doc/">- MySql</a>
             </Col>
             <Container>
-              <Row className='justify-content-between gx-0'>
+              {/* <Row className='justify-content-between gx-0'>
                 <Col className='col-5'>
                   <Button onClick={()=> counter()} style={{borderRadius:5, width:150, height:40, backgroundColor:'#FFA500'}}>Somar {initialValue}</Button>
                 </Col>
                 <Col className='col-5'>
                   <Button  onClick={()=> setInitialValue(0)} style={{borderRadius:5, width:150, height:40, backgroundColor:'#FFA500'}}>Zerar</Button>
                 </Col>
-              </Row>
+              </Row> */}
             </Container>
           </Offcanvas.Body>
         </Offcanvas>
@@ -80,4 +83,4 @@ function OffCanvasExample({ name, ...props }) {
         ))}
       </>
     );
-  }
+  };

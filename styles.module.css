@@ -1,0 +1,11 @@
+.a {
+    font-weight: bold;
+    text-align: center;
+    color: rgb(0, 1, 6);
+    text-decoration: none;
+    margin-left: 10px;
+    /* transition: 100ms ease-in background; */
+  }
+  .a:hover {
+    background: #ccc;
+  }

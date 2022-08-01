@@ -30,7 +30,7 @@ const Header =()=>{
                         </Col>
                         <Col className='col-sm-12 col-md-4 justify-content-center' style={{backgroundColor:'#030303', borderRadius:5}}>
                             <Nav>
-                                <Nav.Link href="https://github.com/JeffersonDRego">Powered by Jefferson D. Rego</Nav.Link>
+                                <Nav.Link href="https://github.com/JeffersonDRego" style={{color:'#FFA500'}}>Powered by Jefferson D. Rego</Nav.Link>
                             </Nav>
                         </Col>
                     </Row>
