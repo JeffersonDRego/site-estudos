@@ -10,26 +10,24 @@ export default function Home(){
     return(
         <Container fluid style={{padding:0}}>
             <Header/>
-            <Container fluid style={{backgroundColor:'skyblue', height:'100%', padding:0}}>
+            <Container fluid style={{height:'100%', padding:0}}>
                 <Row className='me-0'>
-                    <Col className='col-3 d-flex align-items-start justify-content-center' style={{backgroundColor:'blue', height:'100vh'}}>
+                    <Col className='col-12 col-md-4 col-xs-3 d-flex align-items-start justify-content-center'>
                         <OffCanvas/>
                     </Col>
                     <Col className='mt-5 m-5'>
-                        <h2>Seja Bem Vindo!</h2>
-                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nisi praesentium officiis recusandae, 
-                            fuga alias saepe reprehenderit voluptates culpa repellendus? Accusamus fugit 
-                            voluptate cum placeat cumque. Ducimus architecto corrupti quia.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nisi praesentium officiis recusandae, 
-                            fuga alias saepe reprehenderit voluptates culpa repellendus? Accusamus fugit 
-                            vLorem ipsum dolor sit amet consectetur adipisicing elit. Odit nisi praesentium officiis recusandae, 
-                            fuga alias saepe reprehenderit voluptates culpa repellendus? Accusamus fugit 
-                            vLorem ipsum dolor sit amet consectetur adipisicing elit. Odit nisi praesentium officiis recusandae, 
-                            fuga alias saepe reprehenderit voluptates culpa repellendus? Accusamus fugit 
-                            ve.
+                        <h2 style={{fontWeight:'bold'}}>Seja Bem Vindo!</h2>
+                            <div style={{textAlign:'justify'}}>Espero que, se você chegou até aqui, possa aproveitar o conteúdo
+                                disponibilizado...são assuntos simples da programação, as vezes muito úteis
+                                e talvez até, conhecimentos indispensáveis para quem quer se tornar um desenvolvedor... <br/><br/>
+                                Espero que você saiba também que o que vai encontrar aqui é apenas a ponta do iceberg. A 
+                                maioria das respostas que você procura estão provavelmente na documentação oficial.<br/>
+                                Bons estudos!<br/><br/>
+                                Qualquer coisa é só me chamar no WhatsApp...
                             </div>
                     </Col>
                 </Row>
+                <hr/>
             </Container>
         </Container>
     )
