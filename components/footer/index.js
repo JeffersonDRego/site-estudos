@@ -9,10 +9,10 @@ import Button from 'react-bootstrap/Button';
 
 export default function Footer(){
     return(
-        <Container fluid className='fixed-bottom' style={{backgroundColor:'black'}}>
+        <Container fluid className='mt-5' style={{backgroundColor:'black', position:'absolute'}}>
             {/* <Row> */}
                 <Col className='text-center'>
-                    <p className='mt-3' style={{color:'#FFF'}}>Nenhum direito reservado © Muito menos marca registrada ®</p>
+                    <p className='mt-3' style={{color:'#FFF', fontSize:12}}>Nenhum direito reservado © Muito menos marca registrada ®</p>
                 </Col>
             {/* </Row> */}
         </Container>

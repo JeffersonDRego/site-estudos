@@ -6,15 +6,25 @@ import Col from 'react-bootstrap/Col';
 import Header from "../components/header"
 import Footer from '../components/footer';
 import OffCanvas from '../components/offcanvas';
-
+import Accordionn from '../components/accordion';
 export default function Home(){
     return(
-        <Container fluid style={{padding:0}}>
+        <Container fluid style={{padding:0, height:'100vh'}}>
             <Header/>
             <Container fluid style={{height:'100%', padding:0}}>
                 <Row className='me-0'>
-                    <Col className='col-12 col-md-3 d-flex align-items-start justify-content-center'>
-                        <OffCanvas/>
+                    <Col className='col-12 col-md-3 text-center'>
+                        <Row className='' style={{flexDirection:'column'}}>
+                            <Col>
+                                <OffCanvas/>
+                            </Col>
+                            <Col className='mt-2 col-8 col-md-11 m-auto'>
+                                <Accordionn/>
+                            </Col>
+                        </Row>
+                        <Row>
+                        </Row>
+                        
                     </Col>
                     <Col className='mt-5 m-5'>
                         <h2 style={{fontWeight:'bold'}}>Seja Bem Vindo!</h2>
