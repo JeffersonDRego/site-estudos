@@ -11,7 +11,7 @@ import styles from '../styles.module.css'
 import Image from 'next/dist/client/image';
 import nodejs from '../public/nodejs.png';
 import html from '../public/html5.png';
-import reactjs from '../public/Reactjs.jpg';
+import reactjsimage from '../public/reactjsimage.jpg';
 import nextjs from '../public/nextjs.png';
 import css from '../public/css.jpg';
 import jeff from '../public/jeff.jpg';
@@ -34,7 +34,7 @@ export default function Home(){
                                             <Image src={nodejs} layout="fill" objectFit="cover" quality={100}/>
                                         </div>
                                         <div className={styles.faceright}>
-                                            <Image src={reactjs} layout="fill" objectFit="cover" quality={100}/>
+                                            <Image src={reactjsimage} layout="fill" objectFit="cover" quality={100}/>
                                         </div>
                                         <div className={styles.faceback}>
                                             <Image src={jeff} layout="fill" objectFit="cover" quality={100}/>
