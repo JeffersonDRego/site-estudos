@@ -3,7 +3,7 @@ import Accordion from 'react-bootstrap/Accordion';
 
 export default function Accordionn() {
     return (
-      <Accordion>
+      <Accordion className='mb-5'>
         <Accordion.Item eventKey="0">
           <Accordion.Header>Se liga no textinho!</Accordion.Header>
           <Accordion.Body>

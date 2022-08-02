@@ -10,7 +10,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 
 const options = [
     {
-        name :'Exibir todos os tópicos!',
+        name :'Links Oficiais',
         scroll: true,
         backdrop: true,
     }
@@ -34,9 +34,8 @@ function OffCanvasExample({ name, ...props }) {
           {name}
         </Button>
         <Offcanvas show={show} onHide={handleClose} {...props}>
-          {/* <Offcanvas.Header style={{backgroundColor:'#313131'}} closeButton closeVariant='white'> */}
           <Offcanvas.Header style={{backgroundColor:'#313131'}}>
-            <Offcanvas.Title style={{color:'#FFA500'}}>Matérias para estudo</Offcanvas.Title>
+            <Offcanvas.Title style={{color:'#FFA500'}}>VAI MODAFOCKA! ESTUDA!</Offcanvas.Title>
             <div className='btn-close' style={{backgroundColor:'#FFA500'}} onClick={() => setShow(false)}></div>
           </Offcanvas.Header>
           <div className='pt-2' style={{backgroundColor:'#A1A1A1', color:'#FFF'}}>
@@ -55,16 +54,8 @@ function OffCanvasExample({ name, ...props }) {
             <Col className='mb-1'>
                 <a className={styles.a} href="https://dev.mysql.com/doc/">- MySql</a>
             </Col>
-            <Container>
-              {/* <Row className='justify-content-between gx-0'>
-                <Col className='col-5'>
-                  <Button onClick={()=> counter()} style={{borderRadius:5, width:150, height:40, backgroundColor:'#FFA500'}}>Somar {initialValue}</Button>
-                </Col>
-                <Col className='col-5'>
-                  <Button  onClick={()=> setInitialValue(0)} style={{borderRadius:5, width:150, height:40, backgroundColor:'#FFA500'}}>Zerar</Button>
-                </Col>
-              </Row> */}
-            </Container>
+            {/* <Container>
+            </Container> */}
           </Offcanvas.Body>
         </Offcanvas>
       </>
