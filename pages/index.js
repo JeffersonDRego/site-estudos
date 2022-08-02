@@ -18,16 +18,16 @@ import jeff from '../public/jeff.jpg';
 
 export default function Home(){
     return(
-        <Container fluid style={{padding:0, height:'100vh'}}>
+        <Container fluid style={{padding:0, height:'100vh',}}>
             <Header/>
-            <Container fluid style={{height:'100%', padding:0}}>
-                <Row className='me-0'>
+            <Container fluid style={{height:'100%'}}>
+                <Row style={{backgroundColor:'#cdcdcd'}}>
                     <Col className='col-12 col-md-2 text-center'>
-                        <Row style={{flexDirection:'column'}}>
+                        <Row className='ps-4' style={{flexDirection:'column'}}>
                             <Col>
                                 <OffCanvas/>
                             </Col>
-                            <Col className='mt-2 col-8 col-md-11 m-auto'>
+                            <Col className='mt-2 col-8 col-md-11 m-auto ps-5'>
                                 <div style={{width:'100%', justifyContent:'center', display:'flex', marginTop:'30px'}}>
                                     <div className={styles.cube}>
                                         <div className={styles.facefront}>
@@ -66,7 +66,6 @@ export default function Home(){
                         </div>
                     </Col>
                 </Row>
-                <hr/>
             </Container>
             <Footer/>
         </Container>

@@ -10,7 +10,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 
 const options = [
     {
-        name :'Links Oficiais',
+        name :'Links!',
         scroll: true,
         backdrop: true,
     }

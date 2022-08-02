@@ -1,3 +1,4 @@
+
 .a {
     font-weight: bold;
     text-align: center;
@@ -30,7 +31,7 @@
 
 .facefront {
   transform: translateZ(50px);
-  border: 2px solid #4fd1c5;
+  border: 0.2px solid #313131;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,7 +47,7 @@
 
 .faceright {
   transform: rotateY(90deg) translateZ(50px);
-  border: 2px solid #4fd1c5;
+  border: 0.2px solid #313131;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,7 +63,7 @@
 
 .faceback {
   transform: rotateY(180deg) translateZ(50px);
-  border: 2px solid #4fd1c5;
+  border: 0.2px solid #313131;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,7 +79,7 @@
 
 .faceleft {
   transform: rotateY(-90deg) translateZ(50px);
-  border: 2px solid #4fd1c5;
+  border: 0.2px solid #313131;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,7 +95,7 @@
 
 .facetop {
   transform: rotateX(90deg) translateZ(50px);
-  border: 2px solid #4fd1c5;
+  border: 0.2px solid #313131;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -110,7 +111,7 @@
 
 .facebottom {
   transform: rotateX(-90deg) translateZ(50px);
-  border: 2px solid #4fd1c5;
+  border: 0.2px solid #313131;
   display: flex;
   align-items: center;
   justify-content: center;
